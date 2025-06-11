@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.2.0-cudnn8-runtime-ubuntu22.04
+FROM nvidia/cuda:12.2.0-runtime-ubuntu20.04
 # Install system dependencies
 RUN apt-get update && \
     apt-get install -y python3.8 python3-pip git ffmpeg && \

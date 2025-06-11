@@ -5,6 +5,10 @@ RUN apt-get update && \
     ln -s /usr/bin/python3.8 /usr/bin/python && \
     pip install --upgrade pip
 
+# Set timezone to prevent interactive prompt
+ENV TZ=Asia/Kolkata
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Set working directory
 WORKDIR /app
 

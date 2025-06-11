@@ -1,0 +1,10 @@
+{
+    "containerDiskInGb": 20,
+    "gpuTypeId": "NVIDIA A100",
+    "networkIngress": {
+      "enabled": true,
+      "port": 8000
+    },
+    "dockerCommand": null
+  }
+  

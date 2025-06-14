@@ -1,6 +1,5 @@
+modelscope==1.9.4
 torch
-transformers
-modelscope
-gradio
-fastapi
-uvicorn
+opencv-python
+addict
+ffmpeg-python
